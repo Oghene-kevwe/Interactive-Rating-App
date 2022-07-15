@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:400");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scrollbar-width: 0;
+}
+
+html {
+  font-size: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+h1 {
+  font-size: 1.802rem;
+}
+
+h2 {
+  font-size: 1.602rem;
+}
+
+h3 {
+  font-size: 1.424rem;
+}
+
+h4 {
+  font-size: 1.266rem;
+}
+
+h5 {
+  font-size: 1.125rem;
+}
+
+small,
+.text_small {
+  font-size: 0.889rem;
+}
+
+:root {
+  --primary: #212832;
+  --primary-100: #252e37;
+  --secondary: #fc7613;
+  --transition: all 0.8s ease-out;
+}
+body {
+  background: white;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  line-height: 1.75;
+  color: #000000;
+}
+
+.main {
+  background: #141519;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  color: white;
+}
+
+.section {
+  border-radius: 1rem;
+  padding: 2rem;
+  background: var(--primary);
+  width: 22rem;
+  margin: 0 auto;
+}
+
+.section-content {
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: 1.5rem;
+}
+
+.article p {
+  color: #a0abbb;
+  margin-top: 1rem;
+}
+
+.rating {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.submit-btn {
+  background: var(--secondary);
+  border: 0;
+  height: 3rem;
+  display: block;
+  border-radius: 1.5rem;
+  padding: 0.5rem;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: background 0.4s ease-in, color 0.6s ease-in;
+}
+
+.submit-btn:hover {
+  background: white;
+  color: var(--secondary);
+}
+
+img {
+  display: block;
+}
+
+.star {
+  background: var(--primary-100);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.number {
+  border: 0;
+  background: var(--primary-100);
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border-radius: 50%;
+  color: #a0abbb;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.number.select {
+  background: var(--secondary);
+  color: white;
+}
+
+.number:hover {
+  background: rgb(146, 143, 143);
+  color: white;
+}
+
+.thank-you-section {
+  display: grid;
+  text-align: center;
+  row-gap: 0.5rem;
+}
+
+.thank-you-img {
+  display: grid;
+  place-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.result {
+  background: var(--primary-100);
+  color: var(--secondary);
+  border-radius: 1rem;
+  width: 75%;
+  margin: 0 auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.thank-you {
+  margin-top: 1rem;
+}
+
+@media screen and (min-width: 900px) {
+  .section {
+    width: 25rem;
+  }
+}
